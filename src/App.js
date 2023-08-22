@@ -17,6 +17,9 @@ const App = () => {
         </Route>
         {/* //TODO The stories route should be a dynamic route where there is an artist param */}
         <Route path='/stories' element={<Stories />}/>
+        {/* //TODO The lists url here renders the discover component because Lists & then Artists is not created yet and also check for the exact routing that is happening */}
+        <Route path='/lists' element={<Discover />}/>
+        <Route path='/artists' element={<Discover />}/>
       </Routes>
     </div>
   )

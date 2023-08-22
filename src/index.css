@@ -4,6 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 
+body::-webkit-scrollbar {
+      width: 10px; 
+   }
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background: #4e4e4e;
+    border-radius: 25px;
+  }
+
 .navbar-div{
   display: flex;
   align-items: center;
@@ -23,7 +36,7 @@
 br{
   position: relative;
   line-height: 8px;
-  width: 100%;
+  width: 99%;
   display: inline-block;
   height: 2px;
   color: #000000;
@@ -37,4 +50,9 @@ br{
 .vertical {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+}
+
+.entire {
+  width: calc(100vw - 10px);
+  height: 100vh;
 }

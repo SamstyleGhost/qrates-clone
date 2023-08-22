@@ -28,3 +28,13 @@ br{
   height: 2px;
   color: #000000;
 }
+
+.textoutline {
+  -webkit-text-stroke: 2px black;
+  color: white;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}

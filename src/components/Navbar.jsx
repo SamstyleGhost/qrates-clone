@@ -1,34 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { logo } from '../assets';
 import { Link, NavLink } from 'react-router-dom';
 import { Search, Menu, ShoppingCart } from 'react-feather';
 import { navLinks } from '../constants';
-
-const useWindowWidth = () => {
-  const [width, setWidth] = useState(0);
-  
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-    
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    
-    return () => { 
-      window.removeEventListener("resize", handleResize);
-    }
-  }, [setWidth]);
-  
-  return width;
-}
+import { useWindowWidth } from '../utils';
+import { CustomButton } from '../components';
 
 
 const Navbar = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
    
-
   const windowWidth = useWindowWidth();
 
   const navbarBorderStyle = toggleMenu &&  windowWidth < 990 ? {
@@ -68,7 +50,11 @@ const Navbar = () => {
       
       <div className='navbar-div'>
         <Link to='/login'>Log In</Link>
-        <NavLink className='bg-black text-white px-6 py-3 rounded-full' to='/projects/start'>Make Your Own</NavLink> 
+        <CustomButton 
+          url='/projects/start'
+          text='Make Your Own'
+          isFilled
+        />
       </div>
     </div>
   )

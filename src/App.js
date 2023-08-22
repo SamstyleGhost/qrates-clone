@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import { Navbar } from './components'
 import { Route, Routes } from 'react-router-dom'
-import { Home, Discover, Login, Records, Vinyl } from './pages';
+import { Home, Discover, Login, Records, Vinyl, Stories } from './pages';
 
 const App = () => {
   return (
@@ -15,6 +15,8 @@ const App = () => {
           <Route index element={<Records />} /> 
           <Route path='start' element={<Vinyl />} />
         </Route>
+        {/* //TODO The stories route should be a dynamic route where there is an artist param */}
+        <Route path='/stories' element={<Stories />}/>
       </Routes>
     </div>
   )

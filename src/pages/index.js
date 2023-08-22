@@ -5,3 +5,4 @@ export { default as OurCompany } from './OurCompany';
 export { default as Records } from './Records';
 export { default as Vinyl } from './Vinyl';
 export { default as Home } from './Home';
+export { default as Stories } from './Stories';

@@ -31,7 +31,7 @@ const Navbar = () => {
 
   const windowWidth = useWindowWidth();
 
-  const navbarBorderStyle = windowWidth < 990 ? {
+  const navbarBorderStyle = toggleMenu &&  windowWidth < 990 ? {
     borderBottom: '2px solid black',
     paddingBottom: '10px',
   } : {}

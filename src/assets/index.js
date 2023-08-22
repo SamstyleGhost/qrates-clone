@@ -8,6 +8,7 @@ import bg_3 from './images/bg_3.jpg';
 import bg_4 from './images/bg_4.jpg';
 import bg_5 from './images/bg_5.jpg';
 import side_pic_1 from './images/side_pic_1.jpg';
+import side_pic_2 from './images/side_pic_2.jpg';
 
 export {
   artist_1,
@@ -19,5 +20,6 @@ export {
   bg_3,
   bg_4,
   bg_5,
-  side_pic_1
+  side_pic_1,
+  side_pic_2,
 }

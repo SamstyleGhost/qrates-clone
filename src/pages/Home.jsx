@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { artist_1, bg_1, bg_2, bg_3, bg_4, bg_5, side_pic_1 } from '../assets';
+import { artist_1, bg_1, bg_2, bg_3, bg_4, bg_5, side_pic_1, side_pic_2 } from '../assets';
 import { Link, NavLink } from 'react-router-dom';
 import { Motto, CustomButton } from '../components';
 import { useWindowWidth } from '../utils';
@@ -8,6 +8,7 @@ const Home = () => {
 
   const windowWidth = useWindowWidth();
   const [background, setBackground] = useState(bg_2);
+  const [side_pic, setSide_pic] = useState(side_pic_1);
 
   return (
     <div className='flex flex-col w-full mt-8'>
@@ -60,31 +61,66 @@ const Home = () => {
           <span className='font-semibold text-lg'>The latest from the Qrates community</span>
         </div>    
       </div>
-      <div className='entire bg-[#FFF804] flex flex-col'>
-        <div className='w-11/12 h-2/3 relative overflow-hidden mt-8 mx-auto'>
-          <img src={side_pic_1} alt='side_pic' className='absolute top-[-9999px] left-[-9999px] bottom-[-9999px] right-[-9999px] m-auto border-2 border-black' style={{ width:'100%', height: 'auto', backgroundImage: `url(${background})` ,backgroundSize: 'cover'}}/>
+      <div className='entire bg-[#FFF804] flex flex-col md:flex-row-reverse'>
+        <div className='w-11/12 md:w-5/6 overflow-hidden mt-8 md:mt-0 mx-auto'>
+          <img src={side_pic_2} alt='side_pic' className='border-2 border-black md:w-full md:h-full object-cover'/>
         </div>
-        <div className='border-2 border-black text-center w-[110px] font-semibold mx-8 my-10 p-1'>
-          FOR FANS
-        </div>
-        <div className='mx-8 flex flex-col gap-2'>
-          <div className='font-semibold text-4xl w-1/2'>
-            <span>Limited edition, unlimited inspiration.</span>
+        <div className='flex flex-col md:justify-between md:max-w-1/2'>
+          <div>
+            <div className='border-2 border-black text-center w-[110px] font-semibold mx-8 my-10 p-1'>
+              FOR FANS
+            </div>
+            <div className='mx-8 flex flex-col gap-2'>
+              <div className='font-bold text-4xl w-1/2'>
+                <span>Limited edition, unlimited inspiration.</span>
+              </div>
+              <div className='font-[600] text-xl w-3/4'>
+              <span>Discover new records, cassettes, special releases, and one-offs directly supporting artists and labels in the process.</span>
+              </div>
+            </div>
           </div>
-          <div className='font-[600] text-xl w-3/4'>
-          <span>Discover new records, cassettes, special releases, and one-offs directly supporting artists and labels in the process.</span>
+          <div className='m-8 flex flex-col gap-2 sm:flex-row '>
+            <CustomButton 
+              url='/projects'
+              text='BROWSE MUSIC'
+              isFilled
+            />
+            <CustomButton 
+              url='/artists'
+              text='SEE ARTISTS ON QRATES'
+            />
           </div>
         </div>
-        <div className='m-8 flex flex-col gap-2 sm:flex-row '>
-          <CustomButton 
-            url='/projects'
-            text='BROWSE MUSIC'
-            isFilled
-          />
-          <CustomButton 
-            url='/artists'
-            text='SEE ARTISTS ON QRATES'
-          />
+      </div>
+      <div className='entire bg-[#dcdcd4] flex flex-col md:flex-row'>
+        <div className='w-11/12 md:w-5/6 overflow-hidden mt-8 md:mt-0 mx-auto'>
+          <img src={side_pic_1} alt='side_pic' className='border-2 border-black md:w-full md:h-full object-cover'/>
+        </div>
+        <div className='flex flex-col md:justify-between max-w-1/2'>
+          <div>
+            <div className='border-2 border-black text-center w-[140px] font-semibold mx-8 my-10 p-1'>
+              FOR ARTISTS
+            </div>
+            <div className='mx-8 flex flex-col gap-2'>
+              <div className='font-bold text-4xl w-7/12'>
+                <span>Your music on vinyl and cassette, direct to your fans.</span>
+              </div>
+              <div className='font-[600] text-xl w-3/4'>
+              <span>Create beautiful physical copies of your next release on vinyl and cassette. We make the process easy, so you can focus on the music.</span>
+              </div>
+            </div>
+          </div>
+          <div className='m-8 flex flex-col gap-2 sm:flex-row '>
+            <CustomButton 
+              url='/why'
+              text='LEARN MORE'
+              isFilled
+            />
+            <CustomButton 
+              url='/why/crowdfunding'
+              text='COMPARE PROJECT TYPE'
+            />
+          </div>
         </div>
       </div>
     </div>

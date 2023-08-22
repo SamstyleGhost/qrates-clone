@@ -9,3 +9,13 @@
   align-items: center;
   gap: 2rem;
 }
+
+@media (max-width: 768px){
+  .navbar-div{
+    display: none;
+  }
+}
+
+.active {
+  text-decoration-line: underline;
+}

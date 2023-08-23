@@ -17,6 +17,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 25px;
   }
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar-div{
   display: flex;
   align-items: center;

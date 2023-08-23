@@ -42,9 +42,9 @@ const Footer = () => {
           <div className='mt-6 flex flex-col gap-2'>
             {/* //! Again wrong links below */}
             <Link to='/'>Support Center</Link>
-            <Link to='/contact'>Careers</Link>
-            <Link to='/'>Partners</Link>
-            <Link to='/'>Partners</Link>
+            <Link to='/contact'>Contact Us</Link>
+            <Link to='/'>Returns</Link>
+            <Link to='/'>Shipping</Link>
           </div>   
         </div>
       </div>

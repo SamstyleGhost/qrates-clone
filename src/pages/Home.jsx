@@ -8,7 +8,6 @@ const Home = () => {
 
   const windowWidth = useWindowWidth();
   const [background, setBackground] = useState(bg_2);
-  const [side_pic, setSide_pic] = useState(side_pic_1);
 
   return (
     <div className='flex flex-col w-full mt-8'>
@@ -25,7 +24,7 @@ const Home = () => {
           )}
         </div>
         <div className='w-5/6 height-[600px] max-w-3xl mt-8 flex gap-4 items-center md:translate-x-[-75px]'>
-          <Link to='/stories'><img src={artist_1} alt='artist_cover' height='100%' className='object-contain rotate-6 border-4 border-b4ack'/></Link>
+          <Link to='/stories'><img src={artist_1} alt='artist_cover' height='100%' className='object-contain rotate-6 border-4 border-black'/></Link>
           <div className='relative top-[200px] font-semibold text-sm vertical'>
             <span><NavLink to='/stories' className='underline'>Artist</NavLink> IS ON QRATES</span>
           </div>
@@ -34,7 +33,7 @@ const Home = () => {
         <div><Motto /></div>
       )}
       </div>
-      <div className='flex flex-start gap-2 px-8 my-8'>
+      <div className='flex justify-center md:flex-start gap-2 px-8 my-8 md:self-start'>
         <CustomButton 
           url='/discover'
           text='DISCOVER MUSIC'
@@ -54,10 +53,18 @@ const Home = () => {
             FOR FANS
           </div>
           <div className='flex flex-col px-8 font-bold text-6xl py-12'>
-            <NavLink onMouseEnter={() => {setBackground(bg_5)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/discover'>DISCOVER</NavLink>
-            <NavLink onMouseEnter={() => {setBackground(bg_2)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/projects'>RECORDS & CASETTES</NavLink>
-            <NavLink onMouseEnter={() => {setBackground(bg_3)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/stories'>STORIES</NavLink>
-            <NavLink onMouseEnter={() => {setBackground(bg_4)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/lists'>LISTS</NavLink>
+            <div>
+              <NavLink onMouseEnter={() => {setBackground(bg_5)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/discover'>DISCOVER</NavLink>
+            </div>
+            <div>
+             <NavLink onMouseEnter={() => {setBackground(bg_2)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/projects'>RECORDS & CASETTES</NavLink>
+            </div>
+            <div>
+              <NavLink onMouseEnter={() => {setBackground(bg_3)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/stories'>STORIES</NavLink>
+            </div>
+            <div>
+              <NavLink onMouseEnter={() => {setBackground(bg_4)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/lists'>LISTS</NavLink>
+            </div>
           </div>
         </div>
         <div className='px-8 py-4 relative bottom-2'>
@@ -84,7 +91,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='m-8 flex flex-col gap-2 sm:flex-row '>
+          <div className='m-8 flex flex-col justify-center md:flex-start gap-2 sm:flex-row md:self-start'>
             <CustomButton 
               url='/projects'
               text='BROWSE MUSIC'
@@ -117,7 +124,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='m-8 flex flex-col gap-2 sm:flex-row '>
+          <div className='m-8 flex flex-col justify-center md:flex-start gap-2 sm:flex-row md:self-start'>
             <CustomButton 
               url='/why'
               text='LEARN MORE'
@@ -144,9 +151,7 @@ const Home = () => {
           Design the look and feel of your vinyl and cassette and use the profit calculator to immediately see how much your project will cost, and how much you'll earn.
         </div>
         <div className='w-[400px] h-[400px]'>
-          {/* <VinylList /> */}
-          <img src={vinyl_2} alt='vinyl' className='object-cover relative right-[150px] z-10'/>
-          <img src={vinyl_5} alt='vinyl_bg' className='object-cover rounded-full relative bottom-[400px] left-[150px]'/>
+          <VinylList />
         </div>
         <div className='pb-48 mt-16'>
           <NavLink to='/projects/start' className='bg-[#FFF804] text-black font-semibold px-24 py-6 rounded-full text-center'>
@@ -157,14 +162,14 @@ const Home = () => {
 
       {/* Section 6 */}
       <div className='bg-black grid gap-1 grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2'>
-        <img src={artist_2} alt='grid_img'/>
-        <img src={artist_3} alt='grid_img'/>
-        <img src={artist_4} alt='grid_img'/>
-        <img src={artist_5} alt='grid_img'/>
-        <img src={artist_6} alt='grid_img'/>
-        <img src={artist_7} alt='grid_img'/>
-        <img src={artist_8} alt='grid_img'/>
-        <img src={artist_9} alt='grid_img'/>
+        <Link to='https://www.instagram.com/samstyleghost/'><img src={artist_2} alt='grid_img' className='hover:scale-105 rounded-md transition ease-in-out duration-300'/></Link>
+        <Link to='https://www.instagram.com/samstyleghost/'><img src={artist_3} alt='grid_img' className='hover:scale-105 rounded-md transition ease-in-out duration-300'/></Link>
+        <Link to='https://www.instagram.com/samstyleghost/'><img src={artist_4} alt='grid_img' className='hover:scale-105 rounded-md transition ease-in-out duration-300'/></Link>
+        <Link to='https://www.instagram.com/samstyleghost/'><img src={artist_5} alt='grid_img' className='hover:scale-105 rounded-md transition ease-in-out duration-300'/></Link>
+        <Link to='https://www.instagram.com/samstyleghost/'><img src={artist_6} alt='grid_img' className='hover:scale-105 rounded-md transition ease-in-out duration-300'/></Link>
+        <Link to='https://www.instagram.com/samstyleghost/'><img src={artist_7} alt='grid_img' className='hover:scale-105 rounded-md transition ease-in-out duration-300'/></Link>
+        <Link to='https://www.instagram.com/samstyleghost/'><img src={artist_8} alt='grid_img' className='hover:scale-105 rounded-md transition ease-in-out duration-300'/></Link>
+        <Link to='https://www.instagram.com/samstyleghost/'><img src={artist_9} alt='grid_img' className='hover:scale-105 rounded-md transition ease-in-out duration-300'/></Link>
       </div>
     </div>
   )

@@ -74,10 +74,10 @@ const Home = () => {
 
       {/* Section 3 */}
       <div className='entire bg-[#FFF804] flex flex-col md:flex-row-reverse'>
-        <div className='w-11/12 md:w-5/6 overflow-hidden mt-8 md:mt-0 mx-auto'>
+        <div className='w-11/12 md:w-1/2 overflow-hidden mt-8 md:mt-0 mx-auto'>
           <img src={side_pic_2} alt='side_pic' className='border-2 border-black md:w-full md:h-full object-cover'/>
         </div>
-        <div className='flex flex-col md:justify-between md:max-w-1/2'>
+        <div className='flex flex-col md:justify-between md:w-1/2'>
           <div>
             <div className='border-2 border-black text-center w-[110px] font-semibold mx-8 my-10 p-1'>
               FOR FANS
@@ -107,10 +107,10 @@ const Home = () => {
 
       {/* Section 4 */}
       <div className='entire bg-[#dcdcd4] flex flex-col md:flex-row'>
-        <div className='w-11/12 md:w-5/6 overflow-hidden mt-8 md:mt-0 mx-auto'>
+        <div className='w-11/12 md:w-1/2 overflow-hidden mt-8 md:mt-0 mx-auto'>
           <img src={side_pic_1} alt='side_pic' className='border-2 border-black md:w-full md:h-full object-cover'/>
         </div>
-        <div className='flex flex-col md:justify-between max-w-1/2'>
+        <div className='flex flex-col md:justify-between md:w-1/2'>
           <div>
             <div className='border-2 border-black text-center w-[140px] font-semibold mx-8 my-10 p-1'>
               FOR ARTISTS

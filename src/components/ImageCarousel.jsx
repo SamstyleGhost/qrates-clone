@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { artist_1 } from '../assets';
 
 const ImageCarousel = ({ images }) => {
 
@@ -7,20 +6,20 @@ const ImageCarousel = ({ images }) => {
 
 
   return (
-    <div className='md:h-[800px] h-[1100px] bg-[#dcdcd4] flex flex-col md:flex-row'>
-      <div className='w-full md:w-5/6 overflow-hidden mx-auto'>
+    <div className='md:h-[800px] h-[1100px] bg-white flex flex-col md:flex-row'>
+      <div className='w-full md:w-1/2'>
         <img src={images[picture].img} alt='side_pic' className='w-full h-full md:border border-black object-cover'/>
       </div>
-      <div className='flex flex-col md:justify-between md:max-w-1/2 md:border border-black'>
+      <div className='flex flex-col md:justify-between md:w-1/2 md:border border-black'>
         <div>
           <div className='border-2 border-black text-center w-[140px] font-semibold mx-8 my-10 p-1'>
             SCENE CHECK
           </div>
           <div className='mx-8 flex flex-col gap-2'>
-            <div className='font-bold text-4xl w-1/2'>
-              <span>{images[picture].title}</span>
+            <div className='font-bold text-4xl md:w-1/2'>
+              <span>Photo by <span className='underline'><a href={`${images[picture].url}`} target='_blank' rel='noreferrer'>{images[picture].title}</a></span></span>
             </div>
-            <div className='font-[600] text-xl w-3/4'>
+            <div className='font-[600] text-xl mt-4 md:w-3/4'>
             <span>{images[picture].content}</span>
             </div>
           </div>

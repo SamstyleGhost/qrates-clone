@@ -9,19 +9,19 @@ const ImageCarousel = ({ images }) => {
   return (
     <div className='md:h-[800px] h-[1100px] bg-[#dcdcd4] flex flex-col md:flex-row'>
       <div className='w-full md:w-5/6 overflow-hidden mx-auto'>
-        <img src={images[picture].img} alt='side_pic' className='md:border border-black object-cover'/>
+        <img src={images[picture].img} alt='side_pic' className='w-full h-full md:border border-black object-cover'/>
       </div>
       <div className='flex flex-col md:justify-between md:max-w-1/2 md:border border-black'>
         <div>
-          <div className='border-2 border-black text-center w-[110px] font-semibold mx-8 my-10 p-1'>
-            FOR FANS
+          <div className='border-2 border-black text-center w-[140px] font-semibold mx-8 my-10 p-1'>
+            SCENE CHECK
           </div>
           <div className='mx-8 flex flex-col gap-2'>
             <div className='font-bold text-4xl w-1/2'>
-              <span>Limited edition, unlimited inspiration.</span>
+              <span>{images[picture].title}</span>
             </div>
             <div className='font-[600] text-xl w-3/4'>
-            <span>Discover new records, cassettes, special releases, and one-offs directly supporting artists and labels in the process.</span>
+            <span>{images[picture].content}</span>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ const ImageCarousel = ({ images }) => {
             <div 
               key={index}
               onClick={() => setPicture(index)}
-              className='bg-transparent w-[50px] h-[50px] border-2 border-black rounded-full align-middle text-center cursor-pointer'
+              className={`w-[50px] h-[50px] border-2 border-black rounded-full align-middle text-center cursor-pointer ${index === picture ? 'bg-black text-white' : 'bg-transparent'}`}
             >
               <div className='mx-auto my-[12px]'>{index + 1}</div>
             </div>

@@ -1,4 +1,5 @@
 import logo from './github.png';
+import logo_white from './github_white.png';
 import artist_1 from './images/artist_1.jpg';
 import artist_2 from './images/artist_2.jpg';
 import artist_3 from './images/artist_3.jpg';
@@ -26,6 +27,7 @@ import vinyl_5 from './images/vinyl_5.jpg';
 export {
   artist_1,
   logo,
+  logo_white,
   thumbs_up,
   thumbs_up_2,
   bg_1,

@@ -47,6 +47,11 @@ br{
   color: white;
 }
 
+.footertextoutline {
+  -webkit-text-stroke: 2px white;
+  color: black;
+}
+
 .vertical {
   writing-mode: vertical-rl;
   text-orientation: mixed;

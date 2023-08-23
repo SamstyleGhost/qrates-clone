@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from './components'
+import { Navbar, Footer } from './components'
 import { Route, Routes } from 'react-router-dom'
 import { Home, Discover, Login, Records, Vinyl, Stories } from './pages';
 
@@ -21,6 +21,7 @@ const App = () => {
         <Route path='/lists' element={<Discover />}/>
         <Route path='/artists' element={<Discover />}/>
       </Routes>
+      <Footer />
     </div>
   )
 }

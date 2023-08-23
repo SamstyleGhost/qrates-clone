@@ -57,7 +57,7 @@ const Home = () => {
               <NavLink onMouseEnter={() => {setBackground(bg_5)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/discover'>DISCOVER</NavLink>
             </div>
             <div>
-             <NavLink onMouseEnter={() => {setBackground(bg_2)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/projects'>RECORDS & CASETTES</NavLink>
+              <NavLink onMouseEnter={() => {setBackground(bg_2)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/projects'>RECORDS & CASETTES</NavLink>
             </div>
             <div>
               <NavLink onMouseEnter={() => {setBackground(bg_3)}} onMouseLeave={() => setBackground(bg_1)} className='hover:underline' to='/stories'>STORIES</NavLink>

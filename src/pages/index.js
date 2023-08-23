@@ -6,3 +6,5 @@ export { default as Records } from './Records';
 export { default as Vinyl } from './Vinyl';
 export { default as Home } from './Home';
 export { default as Stories } from './Stories';
+export { default as Artists } from './Artists';
+export { default as Lists } from './Lists';

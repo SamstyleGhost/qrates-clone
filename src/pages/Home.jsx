@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { artist_1, bg_1, bg_2, bg_3, bg_4, bg_5, side_pic_1, side_pic_2, vinyl_2, vinyl_5 } from '../assets';
+import { artist_1, bg_1, bg_2, bg_3, bg_4, bg_5, side_pic_1, side_pic_2, vinyl_2, vinyl_5, artist_2, artist_3, artist_4, artist_5, artist_6, artist_7, artist_8, artist_9 } from '../assets';
 import { Link, NavLink } from 'react-router-dom';
 import { Motto, CustomButton, VinylList } from '../components';
 import { useWindowWidth } from '../utils';
@@ -154,7 +154,18 @@ const Home = () => {
           </NavLink>
         </div>
       </div>
-      
+
+      {/* Section 6 */}
+      <div className='bg-black grid gap-1 grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2'>
+        <img src={artist_2} alt='grid_img'/>
+        <img src={artist_3} alt='grid_img'/>
+        <img src={artist_4} alt='grid_img'/>
+        <img src={artist_5} alt='grid_img'/>
+        <img src={artist_6} alt='grid_img'/>
+        <img src={artist_7} alt='grid_img'/>
+        <img src={artist_8} alt='grid_img'/>
+        <img src={artist_9} alt='grid_img'/>
+      </div>
     </div>
   )
 }

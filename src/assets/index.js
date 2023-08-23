@@ -1,5 +1,13 @@
 import logo from './github.png';
 import artist_1 from './images/artist_1.jpg';
+import artist_2 from './images/artist_2.jpg';
+import artist_3 from './images/artist_3.jpg';
+import artist_4 from './images/artist_4.jpg';
+import artist_5 from './images/artist_5.jpg';
+import artist_6 from './images/artist_6.jpg';
+import artist_7 from './images/artist_7.jpg';
+import artist_8 from './images/artist_8.jpg';
+import artist_9 from './images/artist_9.jpg';
 import thumbs_up from './images/thumbs_up.svg';
 import thumbs_up_2 from './images/thumbs_up_2.svg';
 import bg_1 from './images/bg_1.jpg';
@@ -31,5 +39,13 @@ export {
   vinyl_2,
   vinyl_3,
   vinyl_4,
-  vinyl_5
+  vinyl_5,
+  artist_2,
+  artist_3,
+  artist_4,
+  artist_5,
+  artist_6,
+  artist_7,
+  artist_8,
+  artist_9
 }

@@ -9,6 +9,11 @@ import bg_4 from './images/bg_4.jpg';
 import bg_5 from './images/bg_5.jpg';
 import side_pic_1 from './images/side_pic_1.jpg';
 import side_pic_2 from './images/side_pic_2.jpg';
+import vinyl_1 from './images/vinyl_1.jpg';
+import vinyl_2 from './images/vinyl_2.jpg';
+import vinyl_3 from './images/vinyl_3.jpg';
+import vinyl_4 from './images/vinyl_4.jpg';
+import vinyl_5 from './images/vinyl_5.jpg';
 
 export {
   artist_1,
@@ -22,4 +27,9 @@ export {
   bg_5,
   side_pic_1,
   side_pic_2,
+  vinyl_1,
+  vinyl_2,
+  vinyl_3,
+  vinyl_4,
+  vinyl_5
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { artist_1, bg_1, bg_2, bg_3, bg_4, bg_5, side_pic_1, side_pic_2 } from '../assets';
+import { artist_1, bg_1, bg_2, bg_3, bg_4, bg_5, side_pic_1, side_pic_2, vinyl_2, vinyl_5 } from '../assets';
 import { Link, NavLink } from 'react-router-dom';
-import { Motto, CustomButton } from '../components';
+import { Motto, CustomButton, VinylList } from '../components';
 import { useWindowWidth } from '../utils';
 
 const Home = () => {
@@ -12,6 +12,7 @@ const Home = () => {
 
   return (
     <div className='flex flex-col w-full mt-8'>
+      {/* Section 1 */}
       <div className='flex w-full md:flex-row flex-col items-center md:justify-between md:px-8'>
         <div className='flex flex-col '>  
           <div className='flex flex-col items-center md:items-start font-bold text-6xl mb-8'>
@@ -24,7 +25,7 @@ const Home = () => {
           )}
         </div>
         <div className='w-5/6 height-[600px] max-w-3xl mt-8 flex gap-4 items-center md:translate-x-[-75px]'>
-          <Link to='/stories'><img src={artist_1} alt='artist_cover' height='100%' className='object-contain rotate-6 border-2 border-black'/></Link>
+          <Link to='/stories'><img src={artist_1} alt='artist_cover' height='100%' className='object-contain rotate-6 border-4 border-b4ack'/></Link>
           <div className='relative top-[200px] font-semibold text-sm vertical'>
             <span><NavLink to='/stories' className='underline'>Artist</NavLink> IS ON QRATES</span>
           </div>
@@ -45,6 +46,8 @@ const Home = () => {
           text='MAKE YOUR OWN'
         />
       </div>
+
+      {/* Section 2 */}
       <div className='entire text-white flex flex-col justify-between' style={{ backgroundImage: `url(${background})` ,backgroundSize: 'cover'}}>
         <div className='max-w-1/2'>
           <div className='border-2 border-white text-center w-[110px] font-semibold mx-8 my-10 p-1'>
@@ -61,6 +64,8 @@ const Home = () => {
           <span className='font-semibold text-lg'>The latest from the Qrates community</span>
         </div>    
       </div>
+
+      {/* Section 3 */}
       <div className='entire bg-[#FFF804] flex flex-col md:flex-row-reverse'>
         <div className='w-11/12 md:w-5/6 overflow-hidden mt-8 md:mt-0 mx-auto'>
           <img src={side_pic_2} alt='side_pic' className='border-2 border-black md:w-full md:h-full object-cover'/>
@@ -92,6 +97,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Section 4 */}
       <div className='entire bg-[#dcdcd4] flex flex-col md:flex-row'>
         <div className='w-11/12 md:w-5/6 overflow-hidden mt-8 md:mt-0 mx-auto'>
           <img src={side_pic_1} alt='side_pic' className='border-2 border-black md:w-full md:h-full object-cover'/>
@@ -123,6 +130,31 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Section 5 */}
+      <div className='bg-black text-white flex flex-col gap-8 items-center'>
+        <div className='border-2 border-white text-center w-[180px] font-medium mx-8 mt-28 p-1'>
+          QRATES STUDIO
+        </div>  
+        <div className='font-bold text-4xl flex flex-col items-center'>
+          <span>Make it real with</span>
+          <span>Qrates Studios</span>
+        </div>
+        <div className='font-semibold text-lg text-center w-1/2 my-8'>
+          Design the look and feel of your vinyl and cassette and use the profit calculator to immediately see how much your project will cost, and how much you'll earn.
+        </div>
+        <div className='w-[400px] h-[400px]'>
+          {/* <VinylList /> */}
+          <img src={vinyl_2} alt='vinyl' className='object-cover relative right-[150px] z-10'/>
+          <img src={vinyl_5} alt='vinyl_bg' className='object-cover rounded-full relative bottom-[400px] left-[150px]'/>
+        </div>
+        <div className='pb-48 mt-16'>
+          <NavLink to='/projects/start' className='bg-[#FFF804] text-black font-semibold px-24 py-6 rounded-full text-center'>
+            TRY IT NOW
+          </NavLink>
+        </div>
+      </div>
+      
     </div>
   )
 }

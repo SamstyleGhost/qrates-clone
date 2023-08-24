@@ -1,6 +1,7 @@
 import React from 'react';
 import { ImageCarousel } from '../components';
-import { artist_6, artist_8, artist_3 } from '../assets';
+import { artist_6, artist_8, artist_3, vinyl_1, vinyl_disk } from '../assets';
+import { NavLink } from 'react-router-dom';
 
 const Discover = () => {
 
@@ -27,9 +28,33 @@ const Discover = () => {
 
   return (
     <div>
-      <ImageCarousel 
-        images={ImagesArray}
-      />
+      <div className='mb-4 md:mb-0'>
+        <ImageCarousel 
+          images={ImagesArray}
+        />
+      </div>
+      <div className='entire bg-[#dba134] pt-4 px-8 border-2 border-black'>     
+        <div className='border-2 border-black text-center w-[225px] text-sm font-semibold p-1 bg-white'>
+          PROJECT OF THE WEEK
+        </div>
+        <div className='flex flex-col md:flex-col-reverse items-center mt-16 md:mt-4'>
+          <div className='w-[400px] h-[400px] md:mt-16'>
+            <img src={vinyl_1} alt='vinyl' className='object-cover relative right-[150px] z-10'/>
+            <img src={vinyl_disk} alt='vinyl_disk' className='object-cover rounded-full relative bottom-[400px] left-[150px] ring-8 ring-black shadow-inner opacity-80'/>
+            <div className='w-1/2 h-1/2 relative z-20 left-[250px] bottom-[700px] p-8'>
+              <img src={vinyl_1} alt='vinyl_bg' className='object-cover rounded-full ring-2 ring-white shadow-inner'/>
+            </div>
+          </div>
+          <div className='flex flex-col w-1/2 self-start mt-16 md:mt-4'>
+            <span className='font-bold text-3xl'>The Midst of Things</span>
+            <span className='font-semibold text-3xl'>MMYYKK</span>
+            <span className='font-medium text-lg'>Soul, Electronic, HipHop/Rap, R&B, Jazz</span>
+          </div>
+        </div>
+        <div className='font-semibold mt-8 underline md:mt-16 md:absolute md:right-8'>
+          <span><NavLink to='../projects'>EXPLORE THE PROJECT</NavLink></span>
+        </div>
+      </div>
     </div>
   )
 }

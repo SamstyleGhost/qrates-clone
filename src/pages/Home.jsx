@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { artist_1, bg_1, bg_2, bg_3, bg_4, bg_5, side_pic_1, side_pic_2, vinyl_2, vinyl_5, artist_2, artist_3, artist_4, artist_5, artist_6, artist_7, artist_8, artist_9 } from '../assets';
+import { artist_1, bg_1, bg_2, bg_3, bg_4, bg_5, side_pic_1, side_pic_2, artist_2, artist_3, artist_4, artist_5, artist_6, artist_7, artist_8, artist_9 } from '../assets';
 import { Link, NavLink } from 'react-router-dom';
 import { Motto, CustomButton, VinylList } from '../components';
 import { useWindowWidth } from '../utils';
@@ -7,17 +7,17 @@ import { useWindowWidth } from '../utils';
 const Home = () => {
 
   const windowWidth = useWindowWidth();
-  const [background, setBackground] = useState(bg_2);
+  const [background, setBackground] = useState(bg_1);
 
   return (
     <div className='flex flex-col w-full mt-8'>
       {/* Section 1 */}
       <div className='flex w-full md:flex-row flex-col items-center md:justify-between md:px-8'>
-        <div className='flex flex-col '>  
+        <div className='flex flex-col'>  
           <div className='flex flex-col items-center md:items-start font-bold text-6xl mb-8'>
             <span>QRATES</span>
             <span className='textoutline'>MUSIC IN</span>
-            <span className='textoutline'>YOUR HANDS</span>
+            <span className='textoutline text-center'>YOUR HANDS</span>
           </div>
           {windowWidth > 990 && (
             <div><Motto /></div>

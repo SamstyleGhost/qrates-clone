@@ -6,7 +6,7 @@ const ImageCarousel = ({ images }) => {
 
 
   return (
-    <div className='md:h-[800px] h-[1100px] bg-white flex flex-col md:flex-row'>
+    <div className='md:h-[800px] bg-white flex flex-col md:flex-row'>
       <div className='w-full md:w-1/2'>
         <img src={images[picture].img} alt='side_pic' className='w-full h-full md:border border-black object-cover'/>
       </div>
@@ -16,6 +16,9 @@ const ImageCarousel = ({ images }) => {
             SCENE CHECK
           </div>
           <div className='mx-8 flex flex-col gap-2'>
+            <div>
+              <span className='font-bold text-xl italic'>Check out the photos on <span className='text-2xl underline'><a href='https://www.pexels.com/' target='_blank' rel='noreferrer'>Pexels</a></span></span>
+            </div>
             <div className='font-bold text-4xl md:w-1/2'>
               <span>Photo by <span className='underline'><a href={`${images[picture].url}`} target='_blank' rel='noreferrer'>{images[picture].title}</a></span></span>
             </div>

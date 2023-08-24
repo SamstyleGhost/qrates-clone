@@ -4,9 +4,8 @@ const ImageCarousel = ({ images }) => {
 
   const [picture, setPicture] = useState(0);
 
-
   return (
-    <div className='md:h-[800px] bg-white flex flex-col md:flex-row'>
+    <div className='md:h-screen bg-white flex flex-col md:flex-row'>
       <div className='w-full md:w-1/2'>
         <img src={images[picture].img} alt='side_pic' className='w-full h-full md:border border-black object-cover'/>
       </div>

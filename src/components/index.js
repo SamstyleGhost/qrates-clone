@@ -8,3 +8,4 @@ export {default as Vinyl} from './Vinyl';
 export {default as Footer} from './Footer';
 export {default as DiscoverNavbar} from './DiscoverNavbar';
 export {default as ImageCarousel} from './ImageCarousel';
+export {default as ImageGrid} from './ImageGrid';

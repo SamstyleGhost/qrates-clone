@@ -8,7 +8,7 @@ const Vinyl = ({ vinyl_img }) => {
         <img src={vinyl_img} alt='vinyl' className='object-cover shadow-2xl shadow-black drop-shadow-2xl'/>
       </div>
       <div className='inline-block row-start-1 row-end-4 col-start-3 col-end-6'>
-        <img src={vinyl_disk} alt='vinyl_disk' className='object-cover rounded-full shadow-inner opacity-80'/>
+        <img src={vinyl_disk} alt='vinyl_disk' className='object-cover rounded-full shadow-inner opacity-80 ring-2 ring-black'/>
       </div>
       <div className='inline-block row-start-2 row-end-3 col-start-4 col-end-5 z-10'>
         <img src={vinyl_img} alt='vinyl_bg' className='object-cover rounded-full shadow-inner animate-spin-slow'/>

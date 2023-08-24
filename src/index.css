@@ -65,3 +65,15 @@ br{
   width: calc(100vw - 10px);
   height: 100vh;
 }
+
+.vinyl-position {
+  left: 10%;
+}
+
+.vinyl-inner-position {
+  left: -31%;
+}
+
+.vinyl-inner-position-small {
+  left: -29%;
+}

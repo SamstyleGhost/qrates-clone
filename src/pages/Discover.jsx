@@ -2,8 +2,11 @@ import React from 'react';
 import { ImageCarousel } from '../components';
 import { artist_6, artist_8, artist_3, vinyl_1, vinyl_disk } from '../assets';
 import { NavLink } from 'react-router-dom';
+import { useWindowWidth } from '../utils';
 
 const Discover = () => {
+
+  const windowWidth = useWindowWidth();
 
   const ImagesArray = [
     {
@@ -33,25 +36,29 @@ const Discover = () => {
           images={ImagesArray}
         />
       </div>
-      <div className='entire bg-[#dba134] pt-4 px-8 border-2 border-black'>     
+      <div className='bg-[#dba134] pt-4 px-8 border-2 border-black'>     
         <div className='border-2 border-black text-center w-[225px] text-sm font-semibold p-1 bg-white'>
           PROJECT OF THE WEEK
         </div>
-        <div className='flex flex-col md:flex-col-reverse items-center mt-16 md:mt-4'>
-          <div className='w-[400px] h-[400px] md:mt-16'>
-            <img src={vinyl_1} alt='vinyl' className='object-cover relative right-[150px] z-10'/>
-            <img src={vinyl_disk} alt='vinyl_disk' className='object-cover rounded-full relative bottom-[400px] left-[150px] ring-8 ring-black shadow-inner opacity-80'/>
-            <div className='w-1/2 h-1/2 relative z-20 left-[250px] bottom-[700px] p-8'>
-              <img src={vinyl_1} alt='vinyl_bg' className='object-cover rounded-full ring-2 ring-white shadow-inner'/>
+        <div className='flex flex-col md:flex-col-reverse mt-16 md:mt-4'>
+          <div className='md:mt-16 flex items-center pl-16'>
+            <div className='w-1/2 md:w-5/12 relative vinyl-position z-20'>
+              <img src={vinyl_1} alt='vinyl' className='object-cover shadow-2xl shadow-black drop-shadow-2xl'/>
+            </div>
+            <div className='w-5/12 md:p-6 relative'>
+              <img src={vinyl_disk} alt='vinyl_disk' className='object-cover rounded-full ring-8 ring-black shadow-inner opacity-80'/>
+            </div>
+            <div className={`w-1/4 relative ${windowWidth > 992 ? 'vinyl-inner-position' : 'vinyl-inner-position-small'} animate-spin-slow z-10 p-8`}>
+              <img src={vinyl_1} alt='vinyl_bg' className='object-cover rounded-full ring-2 ring-black shadow-inner'/>
             </div>
           </div>
-          <div className='flex flex-col w-1/2 self-start mt-16 md:mt-4'>
+          <div className='flex flex-col w-1/2 mt-16 md:mt-4'>
             <span className='font-bold text-3xl'>The Midst of Things</span>
             <span className='font-semibold text-3xl'>MMYYKK</span>
             <span className='font-medium text-lg'>Soul, Electronic, HipHop/Rap, R&B, Jazz</span>
           </div>
         </div>
-        <div className='font-semibold mt-8 underline md:mt-16 md:absolute md:right-8'>
+        <div className='font-semibold my-8 underline md:relative md:text-right'>
           <span><NavLink to='../projects'>EXPLORE THE PROJECT</NavLink></span>
         </div>
       </div>

@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       screens: {
         'md': '992px'
+      }, 
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
     },
     fontFamily: {

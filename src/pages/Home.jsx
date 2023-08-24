@@ -153,7 +153,7 @@ const Home = () => {
         <div className='w-full'>
           <VinylList />
         </div>
-        <div className='pb-48 mt-16'>
+        <div className='pb-36 mt-24'>
           <NavLink to='/projects/start' className='bg-[#FFF804] text-black font-semibold px-24 py-6 rounded-full text-center'>
             TRY IT NOW
           </NavLink>

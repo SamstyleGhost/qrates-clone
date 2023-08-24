@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Footer, DiscoverNavbar } from './components'
 import { Route, Routes } from 'react-router-dom'
-import { Home, Discover, Login, Records, Vinyl, Stories, Lists, Artists } from './pages';
+import { Home, Discover, Login, Records, Stories, Lists, Artists } from './pages';
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/projects'>
           <Route index element={<Records />} /> 
-          <Route path='start' element={<Vinyl />} />
+          <Route path='start' element={<Discover />} />
         </Route>
       </Routes>
       <Footer />

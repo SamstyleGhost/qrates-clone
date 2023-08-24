@@ -60,23 +60,3 @@ br{
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
-
-.vinyl-position {
-  left: 22.5%;
-}
-
-.vinyl-disk-position {
-  left: 5%;
-}
-
-.vinyl-inner-position {
-  left: -27.5%;
-}
-
-.vinyl-inner-position-discover {
-  left: -26%;
-}
-
-.vinyl-inner-position-dicover-small {
-  left: -24%;
-}

@@ -1,12 +1,9 @@
 import React from 'react';
-import { ImageCarousel } from '../components';
-import { artist_6, artist_8, artist_3, vinyl_1, vinyl_disk } from '../assets';
+import { ImageCarousel, Vinyl } from '../components';
+import { artist_6, artist_8, artist_3, vinyl_1 } from '../assets';
 import { NavLink } from 'react-router-dom';
-import { useWindowWidth } from '../utils';
 
 const Discover = () => {
-
-  const windowWidth = useWindowWidth();
 
   const ImagesArray = [
     {
@@ -41,16 +38,10 @@ const Discover = () => {
           PROJECT OF THE WEEK
         </div>
         <div className='flex flex-col md:flex-col-reverse mt-16 md:mt-4'>
-          <div className='md:mt-16 flex items-center pl-16'>
-            <div className='w-1/2 md:w-5/12 relative vinyl-position z-20'>
-              <img src={vinyl_1} alt='vinyl' className='object-cover shadow-2xl shadow-black drop-shadow-2xl'/>
-            </div>
-            <div className='w-5/12 md:p-6 relative vinyl-disk-position'>
-              <img src={vinyl_disk} alt='vinyl_disk' className='object-cover rounded-full ring-8 ring-black shadow-inner opacity-80'/>
-            </div>
-            <div className={`w-1/4 relative ${windowWidth > 992 ? 'vinyl-inner-position-discover' : 'vinyl-inner-position-dicover-small'} animate-spin-slow z-10 p-8`}>
-              <img src={vinyl_1} alt='vinyl_bg' className='object-cover rounded-full ring-2 ring-black shadow-inner'/>
-            </div>
+          <div className='md:mt-16 flex justify-center'>
+            <Vinyl 
+              vinyl_img={vinyl_1}
+            />
           </div>
           <div className='flex flex-col w-1/2 mt-16 md:mt-4'>
             <span className='font-bold text-3xl'>The Midst of Things</span>

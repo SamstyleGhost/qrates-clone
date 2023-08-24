@@ -47,7 +47,7 @@ const Home = () => {
       </div>
 
       {/* Section 2 */}
-      <div className='entire text-white flex flex-col justify-between' style={{ backgroundImage: `url(${background})` ,backgroundSize: 'cover'}}>
+      <div className='md:h-screen text-white flex flex-col justify-between' style={{ backgroundImage: `url(${background})` ,backgroundSize: 'cover'}}>
         <div className='max-w-1/2'>
           <div className='border-2 border-white text-center w-[110px] font-semibold mx-8 my-10 p-1'>
             FOR FANS
@@ -73,7 +73,7 @@ const Home = () => {
       </div>
 
       {/* Section 3 */}
-      <div className='entire bg-[#FFF804] flex flex-col md:flex-row-reverse'>
+      <div className='md:h-screen bg-[#FFF804] flex flex-col md:flex-row-reverse'>
         <div className='w-11/12 md:w-1/2 overflow-hidden mt-8 md:mt-0 mx-auto'>
           <img src={side_pic_2} alt='side_pic' className='border-2 border-black md:w-full md:h-full object-cover'/>
         </div>
@@ -106,7 +106,7 @@ const Home = () => {
       </div>
 
       {/* Section 4 */}
-      <div className='entire bg-[#dcdcd4] flex flex-col md:flex-row'>
+      <div className='md:h-screen bg-[#dcdcd4] flex flex-col md:flex-row'>
         <div className='w-11/12 md:w-1/2 overflow-hidden mt-8 md:mt-0 mx-auto'>
           <img src={side_pic_1} alt='side_pic' className='border-2 border-black md:w-full md:h-full object-cover'/>
         </div>
@@ -150,7 +150,7 @@ const Home = () => {
         <div className='font-semibold text-lg text-center w-1/2 my-8'>
           Design the look and feel of your vinyl and cassette and use the profit calculator to immediately see how much your project will cost, and how much you'll earn.
         </div>
-        <div className='w-[400px] h-[400px]'>
+        <div className='w-full'>
           <VinylList />
         </div>
         <div className='pb-48 mt-16'>

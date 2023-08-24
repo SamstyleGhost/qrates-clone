@@ -45,10 +45,10 @@ const Discover = () => {
             <div className='w-1/2 md:w-5/12 relative vinyl-position z-20'>
               <img src={vinyl_1} alt='vinyl' className='object-cover shadow-2xl shadow-black drop-shadow-2xl'/>
             </div>
-            <div className='w-5/12 md:p-6 relative'>
+            <div className='w-5/12 md:p-6 relative vinyl-disk-position'>
               <img src={vinyl_disk} alt='vinyl_disk' className='object-cover rounded-full ring-8 ring-black shadow-inner opacity-80'/>
             </div>
-            <div className={`w-1/4 relative ${windowWidth > 992 ? 'vinyl-inner-position' : 'vinyl-inner-position-small'} animate-spin-slow z-10 p-8`}>
+            <div className={`w-1/4 relative ${windowWidth > 992 ? 'vinyl-inner-position-discover' : 'vinyl-inner-position-dicover-small'} animate-spin-slow z-10 p-8`}>
               <img src={vinyl_1} alt='vinyl_bg' className='object-cover rounded-full ring-2 ring-black shadow-inner'/>
             </div>
           </div>

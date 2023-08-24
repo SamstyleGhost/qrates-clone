@@ -61,19 +61,22 @@ br{
   text-orientation: mixed;
 }
 
-.entire {
-  width: calc(100vw - 10px);
-  height: 100vh;
+.vinyl-position {
+  left: 22.5%;
 }
 
-.vinyl-position {
-  left: 10%;
+.vinyl-disk-position {
+  left: 5%;
 }
 
 .vinyl-inner-position {
-  left: -31%;
+  left: -27.5%;
 }
 
-.vinyl-inner-position-small {
-  left: -29%;
+.vinyl-inner-position-discover {
+  left: -26%;
+}
+
+.vinyl-inner-position-dicover-small {
+  left: -24%;
 }

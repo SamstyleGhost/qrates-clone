@@ -25,7 +25,7 @@ const Home = () => {
         </div>
         <div className='w-5/6 height-[600px] max-w-3xl mt-8 flex gap-4 items-center md:translate-x-[-75px]'>
           <Link to='/stories'><img src={artist_1} alt='artist_cover' height='100%' className='object-contain rotate-6 border-4 border-black'/></Link>
-          <div className='relative top-[200px] font-semibold text-sm vertical'>
+          <div className='relative top-[100px] md:top-[200px] font-semibold text-sm vertical'>
             <span><NavLink to='/stories' className='underline'>Artist</NavLink> IS ON QRATES</span>
           </div>
         </div>

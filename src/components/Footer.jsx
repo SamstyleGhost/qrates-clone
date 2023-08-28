@@ -6,7 +6,7 @@ import { logo_white } from '../assets'
 const Footer = () => {
   return (
     <div className='pt-20 pb-10 bg-black text-white'>
-      <div className='grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-1 font-semibold text-lg ml-16'>
+      <div className='grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-1 font-semibold text-lg ml-8 sm:ml-16'>
         <div className='mt-16 md:mt-0'>
           <span>FOR ARTISTS</span>
           <div className='mt-6 flex flex-col gap-2'>
@@ -60,7 +60,7 @@ const Footer = () => {
       <div className='flex flex-col items-center'>
         <div className='flex flex-row pt-12 gap-12 justify-center'>
         <Link to='/'><img src={logo_white} alt="github_logo" width='225' height='225'/></Link>
-          <div className='flex flex-col items-left md:items-start font-bold text-7xl mb-12'>
+          <div className='flex flex-col items-left md:items-start font-bold text-5xl sm:text-7xl mb-12'>
             <span>QRATES</span>
             <span className='footertextoutline'>MUSIC IN</span>
             <span className='footertextoutline'>YOUR HANDS</span>

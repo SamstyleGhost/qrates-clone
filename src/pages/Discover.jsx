@@ -1,13 +1,15 @@
-import React from 'react';
-import { ImageCarousel, Vinyl } from '../components';
-import {  vinyl_1 } from '../assets';
+import React, { useState } from 'react';
+import { ImageCarousel, Vinyl, ImageGrid } from '../components';
+import { vinyl_1 } from '../assets';
 import { NavLink } from 'react-router-dom';
 import { imagesArray, storiesArray } from '../constants';
 
 const Discover = () => {
 
+  const [storiesNav, setStoriesNav] = useState(0);
+
   return (
-    <div>
+    <div className='w-full'>
       {/* Section 1 */}
       <div className='mb-4 md:mb-0'>
         <ImageCarousel 
@@ -40,14 +42,21 @@ const Discover = () => {
       {/* Section 4 */}
       <div className='mt-16'>
         <span className='text-5xl font-bold ml-8'>Stories</span>
-        <div className='w-full ml-8 mt-4 flex gap-16 font-semibold text-xl overflow-x-auto'>
+        <div className='w-full md:ml-8 ml-4 mt-4 flex justify-between md:justify-start md:gap-16 font-semibold text-xl overflow-x-auto'>
           {storiesArray.map((item, index) => (
             <div 
             key={index}
+            onClick={() => setStoriesNav(index)}
+            className={`cursor-pointer text-md mb-4 ${storiesNav === index ? 'underline underline-offset-4 decoration-4' : ''}`}
             >
               {item.view}
             </div>
           ))}
+        </div>
+        <div>
+          <ImageGrid 
+            storyIndex={storiesNav}
+          />
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "https://SamstyleGhost.github.io/qrates-clone",
+    "homepage": "https://samstyleghost.github.io/qrates-clone",
     "publish": "gh-pages -d src"
   },
   "eslintConfig": {

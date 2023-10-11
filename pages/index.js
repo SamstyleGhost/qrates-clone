@@ -1,0 +1,9 @@
+export { default as Discover } from './Discover';
+export { default as ForArtists } from './ForArtists';
+export { default as Login } from './Login';
+export { default as OurCompany } from './OurCompany';
+export { default as Records } from './Records';
+export { default as Home } from './Home';
+export { default as Stories } from './Stories';
+export { default as Artists } from './Artists';
+export { default as Lists } from './Lists';

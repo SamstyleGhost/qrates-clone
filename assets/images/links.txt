@@ -1,0 +1,24 @@
+artist_1 : Photo by Myicahel Tamburini from Pexels: https://www.pexels.com/photo/woman-wearing-black-crop-top-and-orange-skirt-standing-1152994/
+thumbs_up : Image by <a href="https://pixabay.com/users/paligraficas-6638487/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2831243">Augusto Ordóñez</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2831243">Pixabay</a>
+thumbs_up_2 : Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=153290">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=153290">Pixabay</a>
+bg_1 : Photo by Hendrik B: https://www.pexels.com/photo/macro-shot-audio-equalizer-744318/
+bg_2 : Photo by Davis Sánchez: https://www.pexels.com/photo/photo-of-person-wearing-headphones-3916376/
+bg_3 : Photo by Clam Lo: https://www.pexels.com/photo/man-using-light-control-panel-3355358/
+bg_4 : Photo by Blaz Erzetic: https://www.pexels.com/photo/black-headset-on-table-2510575/
+bg_5 : Photo by Brett Sayles: https://www.pexels.com/photo/man-in-black-crew-neck-t-shirt-wearing-black-headphones-3990842/
+side_pic_1 : Photo by Wendy Wei: https://www.pexels.com/photo/purple-fireworks-effect-1190298/
+side_pic_2 : Photo by Wendy Wei: https://www.pexels.com/photo/group-of-people-gathering-in-concert-1540406/
+vinyl_1 : Photo by Jacob Morch: https://www.pexels.com/photo/people-inside-dark-room-with-spotlights-426976/
+vinyl_2 : https://www.pexels.com/photo/teal-white-and-pink-paint-1561020/
+vinyl_3 : Photo by Eric Smart: https://www.pexels.com/photo/person-singing-on-stage-2247678/
+vinyl_4 : Photo by byMALENS: https://www.pexels.com/photo/orange-and-blue-illustration-2157881/
+vinyl_5 : Photo by Darya Sannikova: https://www.pexels.com/photo/woman-s-face-2992517/
+artist_2 : Photo by Lany-Jade Mondou: https://www.pexels.com/photo/woman-holding-a-vinyl-record-while-sitting-on-floor-12204293/
+artist_3 : Photo by Okay Imagery: https://www.pexels.com/photo/man-sitting-on-bed-with-vinyl-records-12987619/
+artist_4 : Photo by Lany-Jade Mondou: https://www.pexels.com/photo/woman-in-white-tank-top-sitting-on-green-and-brown-floral-sofa-chair-12801795/
+artist_5 : Photo by Rodrigo Souza: https://www.pexels.com/photo/photo-of-man-playing-acoustic-guitar-2531551/
+artist_6 : Photo by Martin Lopez: https://www.pexels.com/photo/man-playing-bass-electric-guitar-2649113/
+artist_7 : https://www.pexels.com/photo/woman-in-white-long-sleeve-shirt-playing-flute-8191522/
+artist_8 : Photo by Matthew  Twin: https://www.pexels.com/photo/fashion-man-people-street-18071746/
+artist_9 : Photo by Max Mishin: https://www.pexels.com/photo/bald-man-holding-microphone-singing-12216243/
+vinyle_disk : <a href='https://pngtree.com/freepng/vinyl-music-disc_5614286.html'>png image from pngtree.com/</a>

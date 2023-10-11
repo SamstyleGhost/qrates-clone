@@ -8,7 +8,7 @@ module.exports = {
       }, 
       animation: {
         'spin-slow': 'spin 3s linear infinite',
-      }
+      },
     },
     fontFamily: {
       'montserrat': ['Montserrat', 'sans-serif'],
